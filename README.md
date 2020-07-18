@@ -8,12 +8,10 @@ https://blog.csdn.net/chinabate/article/details/84900286
 
 
 1.window下 ipconfig 
-
 找到默认网关：我的为192.168.1.1
 
 2. linux下 ipconfig
 ens33 inet：192.168.1.71  netmask 255.255.255.0
-
 
 3. /etc/sysconfig/network-scripts/ifcfg-ens33  文件如下：
 TYPE=Ethernet
@@ -36,5 +34,6 @@ GATEWAY=192.168.1.1
 IPV6_PEERDNS=yes
 IPV6_PEERROUTES=yes
 
-4.service network restart
+4.重启网络服务
+service network restart
 
