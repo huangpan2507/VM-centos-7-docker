@@ -17,7 +17,6 @@ ens33 inet：192.168.1.71  netmask 255.255.255.0
 
 3. /etc/sysconfig/network-scripts/ifcfg-ens33  文件如下：
 TYPE=Ethernet
-
 BOOTPROTO=none
 DEFROUTE=yes
 IPV4_FAILURE_FATAL=no
@@ -30,7 +29,6 @@ NAME=ens33
 UUID=d823e897-9310-4aa4-bc42-e5f25b7a5926
 DEVICE=ens33
 ONBOOT=yes
-# MACADDR=00:0C:29:1A:0D:52
 DNS1=8.8.8.8
 IPADDR=192.168.1.71
 PREFIX=24
