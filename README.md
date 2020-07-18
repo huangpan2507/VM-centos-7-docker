@@ -1,8 +1,6 @@
 # VM-centos-7-docker
 vm虚拟机 设置网络，NAT模式时 static IP时，按各种博客出现无法上网问题
 
-
-
 解决如下：
 https://blog.csdn.net/chinabate/article/details/84900286
 
@@ -11,7 +9,7 @@ https://blog.csdn.net/chinabate/article/details/84900286
 找到默认网关：我的为192.168.1.1
 
 2. linux下 ipconfig
-ens33 inet：192.168.1.71  netmask 255.255.255.0
+ens33 中的inet：192.168.1.71  netmask 255.255.255.0
 
 3. /etc/sysconfig/network-scripts/ifcfg-ens33  文件如下：
 TYPE=Ethernet
@@ -36,4 +34,3 @@ IPV6_PEERROUTES=yes
 
 4.重启网络服务
 service network restart
-
